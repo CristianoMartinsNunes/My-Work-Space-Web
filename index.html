@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha - Algoritmo MiniMax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jogo da Velha </h1>
+            <p class="subtitle">Faculdade Anhaguera Betim <br> Ciência da Computação - Fundamentos de IA</p>
+        </header>
+
+        <main>
+            <div class="game-info">
+                <div class="player-info">
+                    <div class="player human">
+                        <span class="player-symbol">X</span>
+                        <span class="player-name">Você</span>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="player ai">
+                        <span class="player-symbol">O</span>
+                        <span class="player-name">IA</span>
+                    </div>
+                </div>
+                
+                <div class="game-status">
+                    <p id="status">  Sua vez! Clique em uma célula para jogar. </p>
+                </div>
+            </div>
+
+            <div class="game-board">
+                <div class="board" id="board">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <button id="restart-btn" class="btn btn-primary">Novo Jogo</button>
+                <button id="reset-score-btn" class="btn btn-secondary">Zerar Placar</button>
+            </div>
+
+            <div class="scoreboard">
+                <div class="score-item">
+                    <span class="score-label">Vitórias</span>
+                    <span class="score-value" id="player-wins">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Empates</span>
+                    <span class="score-value" id="draws">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Derrotas</span>
+                    <span class="score-value" id="ai-wins">0</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Aula 05 - Algoritmo MiniMax em JavaScript</p>
+			<p>Setembro\2025</p>
+        </footer>
+    </div>
+
+    <script src="minimax.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
+
