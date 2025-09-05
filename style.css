@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-color: #F58220;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -353,4 +353,12 @@ footer p {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
 

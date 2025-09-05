@@ -81,13 +81,12 @@ class InterfaceJogo {
             // Verifica se o jogo terminou
             if (this.jogo.jogoTerminado()) {
                 this.finalizarJogo();
-                return;
+            } else {
+                // Volta para a vez do jogador
+                this.jogadorAtual = 'X';
+                this.atualizarStatus('Sua vez! Clique em uma célula para jogar.');
+                this.habilitarTabuleiro();
             }
-
-            // Volta para a vez do jogador
-            this.jogadorAtual = 'X';
-            this.habilitarTabuleiro();
-            this.atualizarStatus('Sua vez! Clique em uma célula para jogar.');
         }
     }
 
